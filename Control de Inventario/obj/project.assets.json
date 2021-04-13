@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\Control de Inventario.csproj",
+      "projectUniqueName": "C:\\Users\\Auxiliar IT\\Documents\\prueba\\ControlDeInventarioUTEC\\Control de Inventario\\Control de Inventario.csproj",
       "projectName": "Control de Inventario",
-      "projectPath": "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\Control de Inventario.csproj",
+      "projectPath": "C:\\Users\\Auxiliar IT\\Documents\\prueba\\ControlDeInventarioUTEC\\Control de Inventario\\Control de Inventario.csproj",
       "packagesPath": "C:\\Users\\Auxiliar IT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\obj\\",
+      "outputPath": "C:\\Users\\Auxiliar IT\\Documents\\prueba\\ControlDeInventarioUTEC\\Control de Inventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Auxiliar IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
