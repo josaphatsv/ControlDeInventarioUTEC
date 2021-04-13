@@ -1,0 +1,16 @@
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.exe
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.deps.json
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.runtimeconfig.json
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.runtimeconfig.dev.json
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.dll
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.pdb
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.csprojAssemblyReference.cache
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.csproj.GenerateResource.cache
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.AssemblyInfoInputs.cache
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.AssemblyInfo.cs
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.csproj.CoreCompileInputs.cache
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.dll
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.pdb
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.genruntimeconfig.cache
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Menu.resources
+C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Properties.Resources.resources
