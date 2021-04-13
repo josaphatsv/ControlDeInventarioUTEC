@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\Control de Inventario.csproj": {}
+    "C:\\Users\\betto\\OneDrive\\Escritorio\\Tareas BD2\\Control de Inventario\\ControlDeInventarioUTEC\\Control de Inventario\\Control de Inventario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\Control de Inventario.csproj": {
+    "C:\\Users\\betto\\OneDrive\\Escritorio\\Tareas BD2\\Control de Inventario\\ControlDeInventarioUTEC\\Control de Inventario\\Control de Inventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\Control de Inventario.csproj",
+        "projectUniqueName": "C:\\Users\\betto\\OneDrive\\Escritorio\\Tareas BD2\\Control de Inventario\\ControlDeInventarioUTEC\\Control de Inventario\\Control de Inventario.csproj",
         "projectName": "Control de Inventario",
-        "projectPath": "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\Control de Inventario.csproj",
-        "packagesPath": "C:\\Users\\Auxiliar IT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Auxiliar IT\\source\\repos\\Control de Inventario\\Control de Inventario\\obj\\",
+        "projectPath": "C:\\Users\\betto\\OneDrive\\Escritorio\\Tareas BD2\\Control de Inventario\\ControlDeInventarioUTEC\\Control de Inventario\\Control de Inventario.csproj",
+        "packagesPath": "C:\\Users\\betto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\betto\\OneDrive\\Escritorio\\Tareas BD2\\Control de Inventario\\ControlDeInventarioUTEC\\Control de Inventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Auxiliar IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\betto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
