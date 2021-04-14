@@ -1,7 +1,7 @@
 ﻿
 namespace Control_de_Inventario
 {
-    partial class Menu
+    partial class FrmMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -40,6 +40,8 @@ namespace Control_de_Inventario
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelUsuario = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelRol = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +57,6 @@ namespace Control_de_Inventario
             this.btnUsuarios.TabIndex = 20;
             this.btnUsuarios.Text = "USUARIOS";
             this.btnUsuarios.UseVisualStyleBackColor = false;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnReportes
             // 
@@ -80,6 +81,7 @@ namespace Control_de_Inventario
             this.btnTransacciones.TabIndex = 18;
             this.btnTransacciones.Text = "TRANSACCIONES";
             this.btnTransacciones.UseVisualStyleBackColor = false;
+            this.btnTransacciones.Click += new System.EventHandler(this.btnTransacciones_Click);
             // 
             // btnInventario
             // 
@@ -178,16 +180,40 @@ namespace Control_de_Inventario
             this.labelUsuario.TabIndex = 23;
             this.labelUsuario.Text = "Usuario";
             // 
-            // Menu
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label2.Location = new System.Drawing.Point(237, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 20);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Rol: ";
+            // 
+            // labelRol
+            // 
+            this.labelRol.AutoSize = true;
+            this.labelRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelRol.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelRol.Location = new System.Drawing.Point(284, 9);
+            this.labelRol.Name = "labelRol";
+            this.labelRol.Size = new System.Drawing.Size(36, 20);
+            this.labelRol.TabIndex = 25;
+            this.labelRol.Text = "Rol";
+            // 
+            // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(401, 352);
+            this.Controls.Add(this.labelRol);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "Menu";
+            this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PROLAC - Menú";
             this.panel1.ResumeLayout(false);
@@ -209,6 +235,8 @@ namespace Control_de_Inventario
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelUsuario;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelRol;
     }
 }
 
