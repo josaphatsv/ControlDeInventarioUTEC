@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Control_de_Inventario
+namespace Control_de_Inventario.Formularios.Formularios_para_busquedas
 {
-    public partial class Form1 : Form
+    public partial class FrmBusquedaArticulo : Form
     {
-        public Form1()
+        public FrmBusquedaArticulo()
         {
             InitializeComponent();
         }
-
     }
 }
