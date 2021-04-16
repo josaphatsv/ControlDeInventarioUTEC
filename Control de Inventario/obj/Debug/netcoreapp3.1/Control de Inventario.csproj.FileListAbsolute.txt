@@ -18,3 +18,23 @@ C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInv
 C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaArticulo.resources
 C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaBodega.resources
 C:\Users\betto\OneDrive\Escritorio\Tareas BD2\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaTransaccion.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.exe
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.deps.json
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.runtimeconfig.json
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.runtimeconfig.dev.json
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.dll
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\bin\Debug\netcoreapp3.1\Control de Inventario.pdb
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.csprojAssemblyReference.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaArticulo.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaBodega.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaTransaccion.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.FrmMenu.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.FrmTransacciones.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control_de_Inventario.Properties.Resources.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.csproj.GenerateResource.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.AssemblyInfoInputs.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.AssemblyInfo.cs
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.csproj.CoreCompileInputs.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.dll
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.pdb
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\Control de Inventario\obj\Debug\netcoreapp3.1\Control de Inventario.genruntimeconfig.cache
