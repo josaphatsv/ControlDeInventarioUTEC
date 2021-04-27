@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="89b9ecf595b44ea28a9122563aa7dfb0" Name="Diagram1">
+        <EntityTypeShape EntityType="inventarioModel.articulos" Width="1.5" PointX="7.5" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.bodegas" Width="1.5" PointX="5.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.detalle_orden" Width="1.5" PointX="12" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.envases" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.formas_almacenaje" Width="1.5" PointX="5.25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.inventario" Width="1.5" PointX="9.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.ordenes" Width="1.5" PointX="7.5" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.proveedores" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.roles" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.sysdiagrams" Width="3.75" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.tipo_movimiento" Width="1.5" PointX="5.25" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.unidades_medida" Width="1.5" PointX="5.25" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="inventarioModel.usuarios" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <AssociationConnector Association="inventarioModel.FK__articulos__idenv__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__articulos__idfor__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__articulos__iduni__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__articulos__idusu__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__inventari__idart__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__bodegas__idusuar__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__inventari__idbod__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__detalle_o__idinv__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__detalle_o__idord__17F790F9" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__envases__idusuar__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__formas_al__idusu__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__inventari__idpro__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__inventari__iduni__114A936A" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__inventari__idusu__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__ordenes__idtipom__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__ordenes__idusuar__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__proveedor__idusu__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__usuarios__idrol__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__tipo_movi__idusu__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="inventarioModel.FK__unidades___idusu__5441852A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="inventarioModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="articulos">
+    <Key>
+      <PropertyRef Name="idarticulo" />
+    </Key>
+    <Property Name="idarticulo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="idenvase" Type="int" />
+    <Property Name="idunidadmedida" Type="int" />
+    <Property Name="idformaalmacenaje" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="bodegas">
+    <Key>
+      <PropertyRef Name="idbodega" />
+    </Key>
+    <Property Name="idbodega" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="bodega" Type="varchar" MaxLength="255" />
+    <Property Name="ubicacion" Type="varchar" MaxLength="255" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="detalle_orden">
+    <Key>
+      <PropertyRef Name="iddetalleorden" />
+    </Key>
+    <Property Name="iddetalleorden" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idorden" Type="int" />
+    <Property Name="idinventario" Type="int" />
+    <Property Name="cantidad" Type="decimal" Precision="9" Scale="3" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="envases">
+    <Key>
+      <PropertyRef Name="idenvase" />
+    </Key>
+    <Property Name="idenvase" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="formas_almacenaje">
+    <Key>
+      <PropertyRef Name="idformaalmacenaje" />
+    </Key>
+    <Property Name="idformaalmacenaje" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="inventario">
+    <Key>
+      <PropertyRef Name="idinventario" />
+    </Key>
+    <Property Name="idinventario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="idarticulo" Type="int" />
+    <Property Name="idproveedor" Type="int" />
+    <Property Name="idbodega" Type="int" />
+    <Property Name="idunidadmedida" Type="int" />
+    <Property Name="lote" Type="varchar" MaxLength="35" />
+    <Property Name="cantidad" Type="decimal" Precision="9" Scale="3" />
+    <Property Name="fecha_vencimiento" Type="date" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ordenes">
+    <Key>
+      <PropertyRef Name="idorden" />
+    </Key>
+    <Property Name="idorden" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="idtipomovimiento" Type="int" />
+    <Property Name="personal" Type="varchar" MaxLength="150" />
+    <Property Name="observaciones" Type="varchar" MaxLength="255" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="proveedores">
+    <Key>
+      <PropertyRef Name="idproveedor" />
+    </Key>
+    <Property Name="idproveedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+    <Property Name="nombre_comercial" Type="varchar" MaxLength="150" />
+    <Property Name="direccion" Type="varchar" MaxLength="255" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="nit" Type="varchar" MaxLength="16" />
+    <Property Name="nrc" Type="varchar" MaxLength="10" />
+    <Property Name="giro" Type="varchar" MaxLength="70" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="idrol" />
+    </Key>
+    <Property Name="idrol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rol" Type="varchar" MaxLength="100" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tipo_movimiento">
+    <Key>
+      <PropertyRef Name="idtipomovimiento" />
+    </Key>
+    <Property Name="idtipomovimiento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="unidades_medida">
+    <Key>
+      <PropertyRef Name="idunidadmedida" />
+    </Key>
+    <Property Name="idunidadmedida" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idusuario" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="idusuario" />
+    </Key>
+    <Property Name="idusuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombres" Type="varchar" MaxLength="255" />
+    <Property Name="apellido" Type="varchar" MaxLength="255" />
+    <Property Name="usuario" Type="varchar" MaxLength="255" />
+    <Property Name="contrasena" Type="varchar" MaxLength="255" />
+    <Property Name="idrol" Type="int" />
+    <Property Name="fechaCreacion" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK__articulos__idenv__04E4BC85">
+    <End Role="envases" Type="Self.envases" Multiplicity="0..1" />
+    <End Role="articulos" Type="Self.articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="envases">
+        <PropertyRef Name="idenvase" />
+      </Principal>
+      <Dependent Role="articulos">
+        <PropertyRef Name="idenvase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__articulos__idfor__06CD04F7">
+    <End Role="formas_almacenaje" Type="Self.formas_almacenaje" Multiplicity="0..1" />
+    <End Role="articulos" Type="Self.articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formas_almacenaje">
+        <PropertyRef Name="idformaalmacenaje" />
+      </Principal>
+      <Dependent Role="articulos">
+        <PropertyRef Name="idformaalmacenaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__articulos__iduni__05D8E0BE">
+    <End Role="unidades_medida" Type="Self.unidades_medida" Multiplicity="0..1" />
+    <End Role="articulos" Type="Self.articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="unidades_medida">
+        <PropertyRef Name="idunidadmedida" />
+      </Principal>
+      <Dependent Role="articulos">
+        <PropertyRef Name="idunidadmedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__articulos__idusu__03F0984C">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="articulos" Type="Self.articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="articulos">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bodegas__idusuar__7D439ABD">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="bodegas" Type="Self.bodegas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="bodegas">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__detalle_o__idinv__18EBB532">
+    <End Role="inventario" Type="Self.inventario" Multiplicity="0..1" />
+    <End Role="detalle_orden" Type="Self.detalle_orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventario">
+        <PropertyRef Name="idinventario" />
+      </Principal>
+      <Dependent Role="detalle_orden">
+        <PropertyRef Name="idinventario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__detalle_o__idord__17F790F9">
+    <End Role="ordenes" Type="Self.ordenes" Multiplicity="0..1" />
+    <End Role="detalle_orden" Type="Self.detalle_orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ordenes">
+        <PropertyRef Name="idorden" />
+      </Principal>
+      <Dependent Role="detalle_orden">
+        <PropertyRef Name="idorden" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__envases__idusuar__6EF57B66">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="envases" Type="Self.envases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="envases">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__formas_al__idusu__68487DD7">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="formas_almacenaje" Type="Self.formas_almacenaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="formas_almacenaje">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inventari__idart__0E6E26BF">
+    <End Role="articulos" Type="Self.articulos" Multiplicity="0..1" />
+    <End Role="inventario" Type="Self.inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="articulos">
+        <PropertyRef Name="idarticulo" />
+      </Principal>
+      <Dependent Role="inventario">
+        <PropertyRef Name="idarticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inventari__idbod__10566F31">
+    <End Role="bodegas" Type="Self.bodegas" Multiplicity="0..1" />
+    <End Role="inventario" Type="Self.inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="bodegas">
+        <PropertyRef Name="idbodega" />
+      </Principal>
+      <Dependent Role="inventario">
+        <PropertyRef Name="idbodega" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inventari__idpro__0F624AF8">
+    <End Role="proveedores" Type="Self.proveedores" Multiplicity="0..1" />
+    <End Role="inventario" Type="Self.inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proveedores">
+        <PropertyRef Name="idproveedor" />
+      </Principal>
+      <Dependent Role="inventario">
+        <PropertyRef Name="idproveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inventari__iduni__114A936A">
+    <End Role="unidades_medida" Type="Self.unidades_medida" Multiplicity="0..1" />
+    <End Role="inventario" Type="Self.inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="unidades_medida">
+        <PropertyRef Name="idunidadmedida" />
+      </Principal>
+      <Dependent Role="inventario">
+        <PropertyRef Name="idunidadmedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inventari__idusu__0D7A0286">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="inventario" Type="Self.inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="inventario">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idtipom__76969D2E">
+    <End Role="tipo_movimiento" Type="Self.tipo_movimiento" Multiplicity="0..1" />
+    <End Role="ordenes" Type="Self.ordenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_movimiento">
+        <PropertyRef Name="idtipomovimiento" />
+      </Principal>
+      <Dependent Role="ordenes">
+        <PropertyRef Name="idtipomovimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idusuar__75A278F5">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="ordenes" Type="Self.ordenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="ordenes">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__proveedor__idusu__619B8048">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="proveedores" Type="Self.proveedores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="proveedores">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tipo_movi__idusu__5AEE82B9">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="tipo_movimiento" Type="Self.tipo_movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="tipo_movimiento">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__unidades___idusu__5441852A">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="unidades_medida" Type="Self.unidades_medida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="unidades_medida">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__usuarios__idrol__4D94879B">
+    <End Role="roles" Type="Self.roles" Multiplicity="0..1" />
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="idrol" />
+      </Principal>
+      <Dependent Role="usuarios">
+        <PropertyRef Name="idrol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="inventarioModelStoreContainer">
+    <EntitySet Name="articulos" EntityType="Self.articulos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bodegas" EntityType="Self.bodegas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="detalle_orden" EntityType="Self.detalle_orden" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="envases" EntityType="Self.envases" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formas_almacenaje" EntityType="Self.formas_almacenaje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inventario" EntityType="Self.inventario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ordenes" EntityType="Self.ordenes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="proveedores" EntityType="Self.proveedores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="roles" EntityType="Self.roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tipo_movimiento" EntityType="Self.tipo_movimiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="unidades_medida" EntityType="Self.unidades_medida" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__articulos__idenv__04E4BC85" Association="Self.FK__articulos__idenv__04E4BC85">
+      <End Role="envases" EntitySet="envases" />
+      <End Role="articulos" EntitySet="articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__articulos__idfor__06CD04F7" Association="Self.FK__articulos__idfor__06CD04F7">
+      <End Role="formas_almacenaje" EntitySet="formas_almacenaje" />
+      <End Role="articulos" EntitySet="articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__articulos__iduni__05D8E0BE" Association="Self.FK__articulos__iduni__05D8E0BE">
+      <End Role="unidades_medida" EntitySet="unidades_medida" />
+      <End Role="articulos" EntitySet="articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__articulos__idusu__03F0984C" Association="Self.FK__articulos__idusu__03F0984C">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="articulos" EntitySet="articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bodegas__idusuar__7D439ABD" Association="Self.FK__bodegas__idusuar__7D439ABD">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="bodegas" EntitySet="bodegas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__detalle_o__idinv__18EBB532" Association="Self.FK__detalle_o__idinv__18EBB532">
+      <End Role="inventario" EntitySet="inventario" />
+      <End Role="detalle_orden" EntitySet="detalle_orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK__detalle_o__idord__17F790F9" Association="Self.FK__detalle_o__idord__17F790F9">
+      <End Role="ordenes" EntitySet="ordenes" />
+      <End Role="detalle_orden" EntitySet="detalle_orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK__envases__idusuar__6EF57B66" Association="Self.FK__envases__idusuar__6EF57B66">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="envases" EntitySet="envases" />
+    </AssociationSet>
+    <AssociationSet Name="FK__formas_al__idusu__68487DD7" Association="Self.FK__formas_al__idusu__68487DD7">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="formas_almacenaje" EntitySet="formas_almacenaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inventari__idart__0E6E26BF" Association="Self.FK__inventari__idart__0E6E26BF">
+      <End Role="articulos" EntitySet="articulos" />
+      <End Role="inventario" EntitySet="inventario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inventari__idbod__10566F31" Association="Self.FK__inventari__idbod__10566F31">
+      <End Role="bodegas" EntitySet="bodegas" />
+      <End Role="inventario" EntitySet="inventario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inventari__idpro__0F624AF8" Association="Self.FK__inventari__idpro__0F624AF8">
+      <End Role="proveedores" EntitySet="proveedores" />
+      <End Role="inventario" EntitySet="inventario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inventari__iduni__114A936A" Association="Self.FK__inventari__iduni__114A936A">
+      <End Role="unidades_medida" EntitySet="unidades_medida" />
+      <End Role="inventario" EntitySet="inventario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inventari__idusu__0D7A0286" Association="Self.FK__inventari__idusu__0D7A0286">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="inventario" EntitySet="inventario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idtipom__76969D2E" Association="Self.FK__ordenes__idtipom__76969D2E">
+      <End Role="tipo_movimiento" EntitySet="tipo_movimiento" />
+      <End Role="ordenes" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idusuar__75A278F5" Association="Self.FK__ordenes__idusuar__75A278F5">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="ordenes" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__proveedor__idusu__619B8048" Association="Self.FK__proveedor__idusu__619B8048">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="proveedores" EntitySet="proveedores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tipo_movi__idusu__5AEE82B9" Association="Self.FK__tipo_movi__idusu__5AEE82B9">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="tipo_movimiento" EntitySet="tipo_movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__unidades___idusu__5441852A" Association="Self.FK__unidades___idusu__5441852A">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="unidades_medida" EntitySet="unidades_medida" />
+    </AssociationSet>
+    <AssociationSet Name="FK__usuarios__idrol__4D94879B" Association="Self.FK__usuarios__idrol__4D94879B">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="usuarios" EntitySet="usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

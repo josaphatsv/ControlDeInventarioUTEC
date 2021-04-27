@@ -1,0 +1,15 @@
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro_de_Inventario.Properties.Resources.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro de Inventario.csproj.GenerateResource.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro de Inventario.csproj.CoreCompileInputs.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\bin\Debug\Contro de Inventario.exe.config
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\bin\Debug\Contro de Inventario.exe
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\bin\Debug\Contro de Inventario.pdb
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro_de_Inventario.Login.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro de Inventario.exe
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro de Inventario.pdb
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Contro de Inventario.csprojAssemblyReference.cache
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Control_de_Inventario.FrmMenu.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Control_de_Inventario.FrmTransacciones.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaArticulo.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaBodega.resources
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\Contro de Inventario\obj\Debug\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaTransaccion.resources

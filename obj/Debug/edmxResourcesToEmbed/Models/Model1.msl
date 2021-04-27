@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="inventarioModelStoreContainer" CdmEntityContainer="inventarioEntities">
+    <EntitySetMapping Name="articulos">
+      <EntityTypeMapping TypeName="inventarioModel.articulos">
+        <MappingFragment StoreEntitySet="articulos">
+          <ScalarProperty Name="idarticulo" ColumnName="idarticulo" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="idenvase" ColumnName="idenvase" />
+          <ScalarProperty Name="idunidadmedida" ColumnName="idunidadmedida" />
+          <ScalarProperty Name="idformaalmacenaje" ColumnName="idformaalmacenaje" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bodegas">
+      <EntityTypeMapping TypeName="inventarioModel.bodegas">
+        <MappingFragment StoreEntitySet="bodegas">
+          <ScalarProperty Name="idbodega" ColumnName="idbodega" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="bodega" ColumnName="bodega" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_orden">
+      <EntityTypeMapping TypeName="inventarioModel.detalle_orden">
+        <MappingFragment StoreEntitySet="detalle_orden">
+          <ScalarProperty Name="iddetalleorden" ColumnName="iddetalleorden" />
+          <ScalarProperty Name="idorden" ColumnName="idorden" />
+          <ScalarProperty Name="idinventario" ColumnName="idinventario" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="envases">
+      <EntityTypeMapping TypeName="inventarioModel.envases">
+        <MappingFragment StoreEntitySet="envases">
+          <ScalarProperty Name="idenvase" ColumnName="idenvase" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formas_almacenaje">
+      <EntityTypeMapping TypeName="inventarioModel.formas_almacenaje">
+        <MappingFragment StoreEntitySet="formas_almacenaje">
+          <ScalarProperty Name="idformaalmacenaje" ColumnName="idformaalmacenaje" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inventario">
+      <EntityTypeMapping TypeName="inventarioModel.inventario">
+        <MappingFragment StoreEntitySet="inventario">
+          <ScalarProperty Name="idinventario" ColumnName="idinventario" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="idarticulo" ColumnName="idarticulo" />
+          <ScalarProperty Name="idproveedor" ColumnName="idproveedor" />
+          <ScalarProperty Name="idbodega" ColumnName="idbodega" />
+          <ScalarProperty Name="idunidadmedida" ColumnName="idunidadmedida" />
+          <ScalarProperty Name="lote" ColumnName="lote" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="fecha_vencimiento" ColumnName="fecha_vencimiento" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ordenes">
+      <EntityTypeMapping TypeName="inventarioModel.ordenes">
+        <MappingFragment StoreEntitySet="ordenes">
+          <ScalarProperty Name="idorden" ColumnName="idorden" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="idtipomovimiento" ColumnName="idtipomovimiento" />
+          <ScalarProperty Name="personal" ColumnName="personal" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proveedores">
+      <EntityTypeMapping TypeName="inventarioModel.proveedores">
+        <MappingFragment StoreEntitySet="proveedores">
+          <ScalarProperty Name="idproveedor" ColumnName="idproveedor" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nombre_comercial" ColumnName="nombre_comercial" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="nrc" ColumnName="nrc" />
+          <ScalarProperty Name="giro" ColumnName="giro" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="inventarioModel.roles">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="idrol" ColumnName="idrol" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="inventarioModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_movimiento">
+      <EntityTypeMapping TypeName="inventarioModel.tipo_movimiento">
+        <MappingFragment StoreEntitySet="tipo_movimiento">
+          <ScalarProperty Name="idtipomovimiento" ColumnName="idtipomovimiento" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unidades_medida">
+      <EntityTypeMapping TypeName="inventarioModel.unidades_medida">
+        <MappingFragment StoreEntitySet="unidades_medida">
+          <ScalarProperty Name="idunidadmedida" ColumnName="idunidadmedida" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="inventarioModel.usuarios">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="idrol" ColumnName="idrol" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
