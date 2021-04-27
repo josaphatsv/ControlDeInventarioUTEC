@@ -1,4 +1,4 @@
-﻿using Control_de_Inventario.Views.Formularios_para_busquedas;
+﻿using Control_de_Inventario.Formularios.Formularios_para_busquedas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

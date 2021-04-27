@@ -1,5 +1,5 @@
 ﻿
-namespace Control_de_Inventario.Views.Formularios_para_busquedas
+namespace Control_de_Inventario.Formularios.Formularios_para_busquedas
 {
     partial class FrmBusquedaArticulo
     {
