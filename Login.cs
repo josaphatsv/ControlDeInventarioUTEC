@@ -17,12 +17,12 @@ namespace Contro_de_Inventario
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void BtnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void BtnIngresar_Click(object sender, EventArgs e)
         {
             using(Models.inventarioEntities db =new Models.inventarioEntities())
             {

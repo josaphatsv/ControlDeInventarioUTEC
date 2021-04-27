@@ -139,7 +139,7 @@ namespace Control_de_Inventario
             this.btnIDArticulo.TabIndex = 12;
             this.btnIDArticulo.Text = "ID Artículo";
             this.btnIDArticulo.UseVisualStyleBackColor = true;
-            this.btnIDArticulo.Click += new System.EventHandler(this.btnIDArticulo_Click);
+            this.btnIDArticulo.Click += new System.EventHandler(this.BtnIDArticulo_Click);
             // 
             // btnIDTransaccion
             // 
@@ -150,7 +150,7 @@ namespace Control_de_Inventario
             this.btnIDTransaccion.TabIndex = 11;
             this.btnIDTransaccion.Text = "ID Transacción";
             this.btnIDTransaccion.UseVisualStyleBackColor = true;
-            this.btnIDTransaccion.Click += new System.EventHandler(this.btnIDTransaccion_Click);
+            this.btnIDTransaccion.Click += new System.EventHandler(this.BtnIDTransaccion_Click);
             // 
             // panel3
             // 
@@ -218,7 +218,7 @@ namespace Control_de_Inventario
             this.btnBodega.TabIndex = 0;
             this.btnBodega.Text = "Bodega";
             this.btnBodega.UseVisualStyleBackColor = true;
-            this.btnBodega.Click += new System.EventHandler(this.btnBodega_Click);
+            this.btnBodega.Click += new System.EventHandler(this.BtnBodega_Click);
             // 
             // grupBoxTipoTrasaccion
             // 

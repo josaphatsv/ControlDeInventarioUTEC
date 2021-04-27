@@ -16,19 +16,19 @@ namespace Control_de_Inventario
             InitializeComponent();
         }
 
-        private void btnIDArticulo_Click(object sender, EventArgs e)
+        private void BtnIDArticulo_Click(object sender, EventArgs e)
         {
             FrmBusquedaArticulo busqArti = new FrmBusquedaArticulo();
             busqArti.Show();
         }
 
-        private void btnBodega_Click(object sender, EventArgs e)
+        private void BtnBodega_Click(object sender, EventArgs e)
         {
             FrmBusquedaBodega busqBo = new FrmBusquedaBodega();
             busqBo.Show();
         }
 
-        private void btnIDTransaccion_Click(object sender, EventArgs e)
+        private void BtnIDTransaccion_Click(object sender, EventArgs e)
         {
             FrmBusquedaTransaccion busqTran = new FrmBusquedaTransaccion();
             busqTran.Show();

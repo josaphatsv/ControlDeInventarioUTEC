@@ -1,5 +1,5 @@
 ﻿
-namespace Contro_de_Inventario.Views
+namespace Contro_de_Inventario
 {
     partial class frmUsuarios
     {
@@ -53,7 +53,7 @@ namespace Contro_de_Inventario.Views
             this.Name = "frmUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento de usuarios";
-            this.Load += new System.EventHandler(this.frmUsuarios_Load);
+            this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
 

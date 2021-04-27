@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Contro_de_Inventario.Views
+namespace Contro_de_Inventario
 {
     public partial class frmUsuarios : Form
     {
@@ -17,14 +17,21 @@ namespace Contro_de_Inventario.Views
             InitializeComponent();
         }
 
-        private void frmUsuarios_Load(object sender, EventArgs e)
+        private void FrmUsuarios_Load(object sender, EventArgs e)
         {
-            using(Models.inventarioEntities db=new Models.inventarioEntities())
+            RefreshdtgUsuarios();
+        }
+
+        #region HELPER
+        private void RefreshdtgUsuarios()
+        {
+            using (Models.inventarioEntities db = new Models.inventarioEntities())
             {
                 var lst = from user in db.usuarios
-                          select user;
+                          select new { user.nombres, user.apellido, user.usuario, user.roles.rol, user.fechaCreacion, user.estado };
                 dgvUsuarios.DataSource = lst.ToList();
             }
         }
+        #endregion
     }
 }

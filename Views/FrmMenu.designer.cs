@@ -57,7 +57,7 @@ namespace Control_de_Inventario
             this.btnUsuarios.TabIndex = 20;
             this.btnUsuarios.Text = "USUARIOS";
             this.btnUsuarios.UseVisualStyleBackColor = false;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            this.btnUsuarios.Click += new System.EventHandler(this.BtnUsuarios_Click);
             // 
             // btnReportes
             // 
@@ -82,7 +82,7 @@ namespace Control_de_Inventario
             this.btnTransacciones.TabIndex = 18;
             this.btnTransacciones.Text = "TRANSACCIONES";
             this.btnTransacciones.UseVisualStyleBackColor = false;
-            this.btnTransacciones.Click += new System.EventHandler(this.btnTransacciones_Click);
+            this.btnTransacciones.Click += new System.EventHandler(this.BtnTransacciones_Click);
             // 
             // btnInventario
             // 

@@ -24,7 +24,6 @@ C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\bin\Debug\EntityFramework.xml
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Control de Inventario.csprojAssemblyReference.cache
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Contro_de_Inventario.Login.resources
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Contro_de_Inventario.Properties.Resources.resources
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Control_de_Inventario.Formularios.Formularios_para_busquedas.FrmBusquedaArticulo.resources
@@ -37,3 +36,4 @@ C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Control de Inventario.csproj.CopyComplete
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Contro de Inventario.exe
 C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Contro de Inventario.pdb
+C:\Users\Auxiliar IT\source\repos\Control de Inventario\ControlDeInventarioUTEC\obj\Debug\Contro_de_Inventario.frmUsuarios.resources

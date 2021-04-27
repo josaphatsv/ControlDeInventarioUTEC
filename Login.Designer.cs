@@ -83,7 +83,7 @@ namespace Contro_de_Inventario
             this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            this.btnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // btnSalir
             // 
@@ -94,7 +94,7 @@ namespace Contro_de_Inventario
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // pictureBox1
             // 
