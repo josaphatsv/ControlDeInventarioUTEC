@@ -23,5 +23,12 @@ namespace Control_de_Inventario
             FrmTransacciones trans = new FrmTransacciones();
             trans.Show();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios user = new FrmUsuarios();
+            user.Show();
+            this.Hide();
+        }
     } 
 }
